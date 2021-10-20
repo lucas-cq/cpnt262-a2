@@ -1,3 +1,4 @@
+// Initial Array containing images
 const carPictures = [
   {
     id: 1,
@@ -38,7 +39,7 @@ const carPictures = [
     description: 'A yellow lambo in the snowy streets',
     width: 400,
     height: 267,
-    pathURL: 'assets/images/lamorghini.jpg',
+    pathURL: 'assets/images/lamborghini.jpg',
     linkURL: 'https://en.wikipedia.org/wiki/Lamborghini',
     credit: 'Matt Antonioli',
     creditURL: 'https://unsplash.com/photos/T_ZdgxzPS5k'
@@ -99,5 +100,18 @@ const carPictures = [
     creditURL: 'https://unsplash.com/photos/6lSBynPRaAQ'
   }
 ]
-
+//Output starts with nothing
 let output = '';
+
+//forEach loop that applies to all images in the array
+carPictures.forEach(function(carId){
+  output += 
+  `<figure class="img-box">
+  <img class="gallery-img" src="${carId.pathURL}" alt="${carId.description}" width="${carId.width}" height="${carId.height}">
+  <figcaption><em><a href="${carId.linkURL}">${carId.title}</a></em><br><a href="${carId.creditURL}">@${carId.credit} on Unsplash</a></figcaption>
+  </figure>`
+});
+
+// Selects the div, and outputs the forEach loop onto HTML
+const gallery = document.querySelector('.wrapper');
+gallery.innerHTML = output;

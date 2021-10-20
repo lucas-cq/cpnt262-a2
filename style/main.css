@@ -254,15 +254,22 @@ a {
 figcaption {
   font-size: 20px;
   font-family: 'Lato', sans-serrif;
-  margin: 5px auto 5px 15px;
+  margin: 10px auto 5px 15px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .heart {
   width: 30px;
 }
 
-figure a {
-  display: flex;
-  align-items: flex-end;
-  margin: 10px 5px 5px 5px;
+figcaption a {
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 0px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+figure a:hover {
+  color: #01518e;
 }
