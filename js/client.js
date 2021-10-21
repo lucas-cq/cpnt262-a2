@@ -99,7 +99,7 @@ const carPictures = [
     credit: 'Olav Tvedt',
     creditURL: 'https://unsplash.com/photos/6lSBynPRaAQ'
   }
-]
+];
 //Output starts with nothing
 let output = '';
 
