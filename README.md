@@ -7,6 +7,6 @@
 Javascript is inputting html code into the page using a foreach loop. This gives each image a set of characterisitcs. This time the code was relatively easier to write and understand. After some help from tony I got it pretty solid looking.
 
 ### Attributes
-All Images sourced from [Unsplash](https://unsplash.com/)
-[Unsplash](https://unsplash.com/license) License
-Some help from Tony, for the (carId.id-selector) code.
+* All Images sourced from [Unsplash](https://unsplash.com/)
+* [Unsplash](https://unsplash.com/license) License
+* Some help from Tony, for the (carId.id-selector) code.
